@@ -1,0 +1,9 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    max-width: 33vw;
+    aspect-ratio: 1 / 1;
+}
