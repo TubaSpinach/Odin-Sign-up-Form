@@ -1,9 +1,42 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url("res/Norse-Bold.otf");
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
+    font-family: Norse-Bold, 'Times New Roman', Times, serif;
 }
 
-img {
-    max-width: 33vw;
-    aspect-ratio: 1 / 1;
+.sidebar {
+    background-image: url("res/yordan-stoyanov-8MnyI1SgfBY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 33vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 33% 17% 50%;
+}
+
+.sidebar-bar {
+    background-color: rgba(100,100,100,0.29);
+    
+    grid-row: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar-bar img{
+    max-height: 100%;
+}
+
+.sidebar-bar span{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-bar span span{
+    color: white;
+    font-size: 5rem;
 }
