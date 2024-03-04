@@ -16,15 +16,27 @@
                 <p>This is not a real service, stinky. Still, you know you wish it was. Why don't you sign up. Use the form below -- give us your info.</p>
                 <p>Do it <em>now</em></p>
             </div>
-            <form action="" method="get" class="form-form">
-                <legend>Let's do this!</legend>
-                <div class="form-row"><label for="f_name">First Name:</label><input type="text" id="f_name" name="f_name"></div>
-                <div class="form-row"><label for="l_name">Last Name:</label><input type="text" id="l_name" name="l_name"></div>
-                <div class="form-row"><label for="mail">Email:</label><input type="email" id="mail" name="mail"></div>
-                <div class="form-row"><label for="phone">Phone Number:</label><input type="tel" id="phone" name="phone"></div>
-                <div class="form-row"><label for="pw">Password:</label><input type="password" id="pw" name="pw"></div>
-                <div class="form-row"><label for="pw_c">Confirm Password:</label><input type="password" id="pw_c" name="pw_c"></div>
-            </form>
+            <div class="form-wrapper">
+                <form action="" method="get" class="form-form" id="the-form">
+                    <legend>Let's do this!</legend>
+                    <div class="form-body">
+                        <div class="row-1">
+                            <div class="form-row"><label for="f_name">First Name:</label><input type="text" id="f_name" name="f_name"></div>
+                            <div class="form-row"><label for="mail">Email:</label><input type="email" id="mail" name="mail"></div>
+                            <div class="form-row"><label for="pw">Password:</label><input type="password" id="pw" name="pw"></div>
+                        </div>
+                        <div class="row-2">
+                            <div class="form-row"><label for="l_name">Last Name:</label><input type="text" id="l_name" name="l_name"></div>
+                            <div class="form-row"><label for="phone">Phone Number:</label><input type="tel" id="phone" name="phone"></div>
+                            <div class="form-row"><label for="pw_c">Confirm Password:</label><input type="password" id="pw_c" name="pw_c"></div>
+                        </div>  
+                    </div>
+                </form>
+            </div>
+            <div class="form-footer">
+                <button type="submit" form="the-form">Create Account</button>
+                <p>Already have an account?<a href="log-in.html" >Log in!</a></p>
+            </div>
         </div>
     </div>
 </body>

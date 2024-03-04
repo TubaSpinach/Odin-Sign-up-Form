@@ -3,6 +3,15 @@
     src: url("res/Norse-Bold.otf");
 }
 
+:root {
+    --trans-color: rgba(79,49,48,0.19);
+    --main-color: #fff9a5;
+    --font-color: #4f3130;
+}
+body {
+    margin: 0;
+    background-color: var(--main-color,#FFFFFF);
+}
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -20,7 +29,7 @@
 }
 
 .sidebar-bar {
-    background-color: rgba(100,100,100,0.29);
+    background-color: var(--trans-color,grey);
     
     grid-row: 2;
     display: flex;
@@ -39,4 +48,85 @@
 .sidebar-bar span span{
     color: white;
     font-size: 5rem;
+}
+
+.form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.form-header, .form-wrapper, .form-footer {
+    padding-left: 3rem;
+    padding-right: 15rem;
+}
+
+.form-header {
+    font-size: 2rem;
+    font-weight: 700;
+}  
+
+.form-wrapper {  
+    background-color: var(--trans-color,grey);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.form-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-wrapper legend{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--font-color,brown);
+    
+}
+
+.form-row label{
+    grid-row: 1;
+}
+
+.form-row input{
+    grid-row: 2;
+    border: 1px solid rgba(79,49,48,0.39);
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px grey;
+    outline: none;
+}
+
+.form-footer{
+    font-size: 1.5rem;
+
+}
+.form-footer button{
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    background-color: #4f3130;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.form-footer p a:link{
+    color: var(--font-color,blue);
+    text-decoration: none;
 }
